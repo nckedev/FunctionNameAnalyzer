@@ -14,7 +14,7 @@ public class FunctionNameAnalyzer : DiagnosticAnalyzer
     public const string MessageFormat = "Get i {0} borde vara först";
     public const string Description = "FunctionNameAnalyzer.";
 
-    internal static DiagnosticDescriptor Rule = new DiagnosticDescriptor("SLH0001", Title, MessageFormat, "stateless",
+    private static readonly DiagnosticDescriptor Rule = new DiagnosticDescriptor("SLH001", Title, MessageFormat, "stateless",
         DiagnosticSeverity.Warning, isEnabledByDefault: true, description: Description);
 
     public override void Initialize(AnalysisContext context)
@@ -30,7 +30,6 @@ public class FunctionNameAnalyzer : DiagnosticAnalyzer
 
     public void GetTest()
     {
-        var a = 2;
     }
 
     private static void AnalyzeFunctionName(SyntaxNodeAnalysisContext context)

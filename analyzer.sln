@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "analyzer", "analyzer\analyz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyzerTest", "AnalyzerTest\AnalyzerTest.csproj", "{5E39434B-7FCA-4AF7-BB68-341C63C9A80F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "analyzerCodeFix", "analyzerCodeFix\analyzerCodeFix.csproj", "{77851139-D689-4D13-8293-2E3781E0B946}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{5E39434B-7FCA-4AF7-BB68-341C63C9A80F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E39434B-7FCA-4AF7-BB68-341C63C9A80F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E39434B-7FCA-4AF7-BB68-341C63C9A80F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77851139-D689-4D13-8293-2E3781E0B946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77851139-D689-4D13-8293-2E3781E0B946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77851139-D689-4D13-8293-2E3781E0B946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77851139-D689-4D13-8293-2E3781E0B946}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
