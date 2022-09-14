@@ -6,7 +6,7 @@ using Microsoft.CodeAnalysis.CodeFixes;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Rename;
 
-namespace analyzerCodeFix;
+namespace analyzer;
 
 [ExportCodeFixProvider(LanguageNames.CSharp, Name = nameof(FunctionNameCodeFix)), Shared]
 public class FunctionNameCodeFix : CodeFixProvider

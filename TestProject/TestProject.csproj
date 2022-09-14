@@ -1,13 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
-
     <ItemGroup>
-        <PackageReference Include="Microsoft.CodeAnalysis" Version="4.3.0"/>
-        <Analyzer Include="bin/Release/net6.0/analyzer.dll"/>
+        <Analyzer Include="../analyzer/bin/Debug/net6.0/analyzer.dll" />
     </ItemGroup>
 
 </Project>

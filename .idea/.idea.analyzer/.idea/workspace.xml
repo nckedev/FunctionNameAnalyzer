@@ -1,6 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.environmentSetup" />
+  <component name="ChangeListManager">
+    <list default="true" id="0d7d7007-f9b1-4ff4-80a8-01b8d0961651" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/analyzer/FunctionNameCodeFix.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.analyzer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.analyzer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnalyzerTest/AnalyzerTest.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AnalyzerTest/AnalyzerTest.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnalyzerTest/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AnalyzerTest/Tests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer.sln" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer/FunctionNameAnalyzer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/FunctionNameAnalyzer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer/analyzer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/analyzer.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzerCodeFix/FunctionNameCodeFix.cs" beforeDir="false" afterPath="$PROJECT_DIR$/analyzerCodeFix/FunctionNameCodeFix.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4d5f55eae1b6ac7ee454f29f991432facf3c2fa270f91eebe8666879ea3b94/DiagnosticAnalyzer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AnalyzerTest/Tests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AnalyzerTest/Usings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/analyzer/FunctionNameAnalyzer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/analyzerCodeFix/FunctionNameCodeFix.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EkP854FBmGfImscW8kSxQZAsCX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.tabnine.userSettings.AppSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d7d7007-f9b1-4ff4-80a8-01b8d0961651" name="Changes" comment="" />
+      <created>1663136446811</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663136446811</updated>
+      <workItem from="1663136449357" duration="1250000" />
+      <workItem from="1663137817404" duration="859000" />
+      <workItem from="1663138780245" duration="10320000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/analyzerCodeFix/FunctionNameCodeFix.cs</url>
+          <line>42</line>
+          <properties documentPath="C:\Users\NiklasAndersson\source\repos\FunctionNameAnalyzer\analyzerCodeFix\FunctionNameCodeFix.cs" initialLine="41" containingFunctionPresentation="method 'NewFucntionName'">
+            <startOffsets>
+              <option value="1843" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1861" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
