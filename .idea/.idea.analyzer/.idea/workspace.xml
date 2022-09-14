@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d7d7007-f9b1-4ff4-80a8-01b8d0961651" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/analyzer/FunctionNameCodeFix.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.analyzer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.analyzer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnalyzerTest/AnalyzerTest.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AnalyzerTest/AnalyzerTest.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnalyzerTest/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AnalyzerTest/Tests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyzer.sln" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject/Class1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject/Class1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject/TestProject.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject/TestProject.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analyzer/FunctionNameAnalyzer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/FunctionNameAnalyzer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzer/FunctionNameCodeFix.cs" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/FunctionNameCodeFix.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analyzer/analyzer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/analyzer/analyzer.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyzerCodeFix/FunctionNameCodeFix.cs" beforeDir="false" afterPath="$PROJECT_DIR$/analyzerCodeFix/FunctionNameCodeFix.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +16,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4d5f55eae1b6ac7ee454f29f991432facf3c2fa270f91eebe8666879ea3b94/DiagnosticAnalyzer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/75c2442fe9d54de4f269dcfc91adea4326893c34dc10c9367032a952934ac676/CodeFixProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AnalyzerTest/Tests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AnalyzerTest/Usings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/analyzer/FunctionNameAnalyzer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/analyzer/FunctionNameCodeFix.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/analyzerCodeFix/FunctionNameCodeFix.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -33,16 +33,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.tabnine.userSettings.AppSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "settings.editor.selected.configurable": "RiderNuGetOptionsPageId",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,8 +53,16 @@
       <updated>1663136446811</updated>
       <workItem from="1663136449357" duration="1250000" />
       <workItem from="1663137817404" duration="859000" />
-      <workItem from="1663138780245" duration="10320000" />
+      <workItem from="1663138780245" duration="10841000" />
+      <workItem from="1663179281726" duration="5737000" />
     </task>
+    <task id="LOCAL−00001" summary="codefix">
+      <created>1663178356157</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1663178356157</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,6 +83,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="codefix" />
+    <option name="LAST_COMMIT_MESSAGE" value="codefix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

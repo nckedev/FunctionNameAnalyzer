@@ -1,7 +1,6 @@
 ﻿using System.Collections.Immutable;
-using System.Reflection.Metadata;
-using System.Security.Cryptography.X509Certificates;
 using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CodeFixes;
 using Microsoft.CodeAnalysis.Diagnostics;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -23,9 +22,9 @@ public class FunctionNameAnalyzer : DiagnosticAnalyzer
 
     public override void Initialize(AnalysisContext context)
     {
-        context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
+        context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.Analyze | GeneratedCodeAnalysisFlags.ReportDiagnostics);
         context.EnableConcurrentExecution();
-        context.RegisterSyntaxNodeAction(AnalyzeFunctionName, SyntaxKind.MethodDeclaration);
+        context.RegisterSyntaxNodeAction(analysisContext => AnalyzeFunctionName(analysisContext), SyntaxKind.MethodDeclaration);
     }
 
     public void TestGetList()
@@ -66,8 +65,9 @@ public class FunctionNameAnalyzer : DiagnosticAnalyzer
         foreach (var word in bannedWords)
         {
             if (identifier.Contains(word, StringComparison.CurrentCultureIgnoreCase) &&
-                !identifier.StartsWith(word, StringComparison.CurrentCultureIgnoreCase))
+                identifier.StartsWith(word, StringComparison.CurrentCultureIgnoreCase) == false)
             {
+                return true;
                 var nextCharIndex =
                     identifier.IndexOf(word, StringComparison.CurrentCultureIgnoreCase) + word.Length;
                 if (nextCharIndex >= identifier.Length - 1)

@@ -12,6 +12,7 @@ namespace analyzer;
 public class FunctionNameCodeFix : CodeFixProvider
 {
     public override ImmutableArray<string> FixableDiagnosticIds { get; } = ImmutableArray.Create("SLH001");
+    public override FixAllProvider? GetFixAllProvider() => null;
 
     public override async Task RegisterCodeFixesAsync(CodeFixContext context)
     {
@@ -26,16 +27,19 @@ public class FunctionNameCodeFix : CodeFixProvider
         Solution solution = document.Project.Solution;
         var documentSemanticModel = await document.GetSemanticModelAsync(context.CancellationToken);
         var classModel = documentSemanticModel?.GetDeclaredSymbol(methodDeclaration, context.CancellationToken);
-        
+
         string suggestedName = NewFucntionName(identifier.ValueText);
 
         var diagnostic = context.Diagnostics.First();
-        context.RegisterCodeFix(CodeAction.Create(title: "Change order",
-                async ct => await Renamer.RenameSymbolAsync(solution, classModel, new SymbolRenameOptions(),
-                    suggestedName, ct), equivalenceKey: null),
-            diagnostic);
+        if (classModel != null)
+        {
+            context.RegisterCodeFix(CodeAction.Create(title: "Change order",
+                    async ct => await Renamer.RenameSymbolAsync(solution, classModel, new SymbolRenameOptions(),
+                        suggestedName, ct), equivalenceKey: "SLH001CF"),
+                diagnostic);
+        }
     }
-    
+
     private string NewFucntionName(string oldName)
     {
         if (oldName.Contains("get", StringComparison.CurrentCultureIgnoreCase))

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>FunctionNameAnalyzer</id>
+    <version>1.0.2</version>
+    <title>Function Name Analyzers</title>
+    <authors>Niklas Andersson Jobbs.se</authors>
+    <description>Analyzer for Jobbs naming convensions</description>
+  </metadata>
+  <files>
+    <file src="bin\$Configuration$\net6.0\analyzer.dll" target="analyzers\dotnet\cs\" />  </files>
+</package>
